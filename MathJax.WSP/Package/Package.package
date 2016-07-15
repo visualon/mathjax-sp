@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d776e794-971a-4986-927b-73e9671c03da" solutionId="d776e794-971a-4986-927b-73e9671c03da" resetWebServer="false" title="MathJax v2.2" name="MathJax" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d776e794-971a-4986-927b-73e9671c03da" solutionId="d776e794-971a-4986-927b-73e9671c03da" resetWebServer="false" title="MathJax v2.2" sharePointProductVersion="15.0" name="MathJax" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <projectItems>
     <projectItemReference itemId="9a4d6b85-fcba-42f9-a8fa-f6f5f0f40761" />
   </projectItems>
