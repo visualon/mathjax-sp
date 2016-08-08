@@ -13,6 +13,7 @@ function mj(path) {
 let files = [
     mj("/MathJax.js"),
     mj("/LICENSE"),
+    mj("/config/*.js"),
     mj("/extensions/**/*.js"),
     mj("/fonts/**/*.{woff,txt}"),
     mj("/jax/**/*.js"),
@@ -21,22 +22,20 @@ let files = [
 
 
 let version = pjson.version;
+let source = gutil.env.src || "VisualOnStaging";
 
 if (gutil.env.build) {
     version += "-" + gutil.env.build;
 }
 
-function clean() {
-    // You can use multiple globbing patterns as you would with `gulp.src`
+gulp.task('clean', function () {
     return del(['bin', "MathJax.WSP/Layouts/MathJax/**/*.*"]);
-}
-
-gulp.task('clean', clean);
+});
 
 gulp.task('copy', ["clean"], function () {
     return gulp
         .src(files, { base: mj() })
-        .pipe(gulp.dest("MathJax.WSP/Layouts/MathJax"))
+        .pipe(gulp.dest("MathJax.WSP/Layouts/MathJax"));
 });
 
 gulp.task('build', ["copy"], function () {
@@ -50,7 +49,7 @@ gulp.task('build', ["copy"], function () {
             configuration: "Release",
             verbosity: "minimal",
             properties: { BasePackagePath: "..\\bin\\" }
-        }))
+        }));
 });
 
 gulp.task('pack', ["build"], function () {
@@ -61,7 +60,16 @@ gulp.task('pack', ["build"], function () {
             version: version,
             properties: 'configuration=Release;author=VisualOn GmbH;year=' + new Date().getUTCFullYear()
         }))
-    .pipe(gulp.dest("bin/"))
+    .pipe(gulp.dest("bin/"));
+});
+
+gulp.task('push', [], function () {
+    return gulp
+        .src("bin/*.nupkg")
+        .pipe(nuget.push({
+            nuget: "nuget.exe",
+            source: source
+        }))
 });
 
 gulp.task('default', ["pack"]);
