@@ -26,9 +26,9 @@ if (gutil.env.build) {
     version += "-" + gutil.env.build;
 }
 
-function clean(done) {
+function clean() {
     // You can use multiple globbing patterns as you would with `gulp.src`
-    del(['bin', "MathJax.WSP/Layouts/MathJax/**"], done);
+    return del(['bin', "MathJax.WSP/Layouts/MathJax/**/*.*"]);
 }
 
 gulp.task('clean', clean);
@@ -48,7 +48,8 @@ gulp.task('build', ["copy"], function () {
             targets: ['Package'],
             toolsVersion: 14.0,
             configuration: "Release",
-            verbosity: "minimal"
+            verbosity: "minimal",
+            properties: { BasePackagePath: "..\\bin\\" }
         }))
 });
 

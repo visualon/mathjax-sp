@@ -14,7 +14,7 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="MathJax.WSP\bin\$configuration$\MathJax.wsp" target="" />
+        <file src="bin\MathJax.wsp" target="" />
         <file src="tools\**" target="tools" />
     </files>
 </package>
