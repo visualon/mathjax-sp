@@ -1,0 +1,33 @@
+{
+  "name": "mathjax-sp",
+  "version": "2.6.1",
+  "description": "MathJax for SharePoint",
+  "private": true,
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-msbuild": "^0.3.3",
+    "gulp-nuget": "^1.0.1",
+    "gulp-util": "^3.0.7",
+    "mathjax": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo 'No tests here!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ViceIce/mathjax-sp.git"
+  },
+  "keywords": [
+    "mathjax",
+    "tex",
+    "latex",
+    "sharepoint"
+  ],
+  "author": "Michael Kriese",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ViceIce/mathjax-sp/issues"
+  },
+  "homepage": "https://github.com/ViceIce/mathjax-sp#readme"
+}

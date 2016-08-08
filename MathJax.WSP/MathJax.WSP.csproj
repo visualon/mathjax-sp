@@ -47,6 +47,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\MathJax.nuspec">
+      <Link>MathJax.nuspec</Link>
+    </None>
+    <None Include="..\package.json">
+      <Link>package.json</Link>
+    </None>
+    <None Include="..\tools\chocolateyinstall.ps1">
+      <Link>tools\chocolateyinstall.ps1</Link>
+    </None>
+    <None Include="..\tools\chocolateyuninstall.ps1">
+      <Link>tools\chocolateyuninstall.ps1</Link>
+    </None>
     <None Include="key.snk" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9a4d6b85-fcba-42f9-a8fa-f6f5f0f40761}</SharePointProjectItemId>
@@ -62,13 +74,16 @@
     <Folder Include="Features\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Layouts\MathJax\**\*.js" Exclude="Layouts\MathJax\**\unpacked\**\*.js;Layouts\MathJax\**\png\**\*.js" />
+    <None Include="Layouts\MathJax\**\*.js" />
     <None Include="Layouts\MathJax\**\*.svg" />
     <None Include="Layouts\MathJax\**\*.eot" />
     <None Include="Layouts\MathJax\**\*.otf" />
     <None Include="Layouts\MathJax\**\*.woff" />
-    <None Include="Layouts\MathJax\images\CloseX-31.png" />
-    <None Include="Layouts\MathJax\images\MenuArrow-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\gulpfile.js">
+      <Link>gulpfile.js</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
