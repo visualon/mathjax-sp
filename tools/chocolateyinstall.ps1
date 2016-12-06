@@ -13,7 +13,7 @@ $local = $false
 # Wait for timer job during deploy and retract
 function Wait4TimerJob($solution)
 {
-  $counter = 120
+  $counter = 240
   $sleeptime = 1
 
   while( ($solution.JobExists -eq $true ) -and ( $counter -gt 0 ) )
