@@ -13,6 +13,10 @@ if ($sol -ne $null)
     #Uninstall-SPSolution $sol -AllWebApplications -Local
     #$sol.LastOperationDetails | Write-Host -ForegroundColor Yellow
     #Remove-SPSolution $sol
-}
 
-"You have to manually uninstall the solution: " + $file.Name | Write-Host -ForegroundColor Yellow
+    "You have to manually uninstall the solution: " + $file.Name | Write-Host -ForegroundColor Yellow
+}
+else
+{
+    "Solution already uninstalled" | Write-Host -ForegroundColor Green
+}
