@@ -10,7 +10,7 @@
         <copyright>Copyright $year$ $author$</copyright>
         <iconUrl>https://static.visualon.de/img/logo-vo.svg</iconUrl>
         <dependencies>
-            <dependency id="chocolatey" version="0.9.9" />
+            <dependency id="chocolatey-core.extension" version="1.0.4" />
         </dependencies>
     </metadata>
     <files>
