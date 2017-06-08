@@ -9,7 +9,7 @@
     "gulp-msbuild": "^0.4.3",
     "gulp-nuget": "^1.0.3",
     "gulp-util": "^3.0.7",
-    "mathjax": "2.7.0"
+    "mathjax": "2.7.1"
   },
   "scripts": {
     "test": "echo 'No tests here!'",
