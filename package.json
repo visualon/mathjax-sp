@@ -12,7 +12,8 @@
     "mathjax": "2.7.0"
   },
   "scripts": {
-    "test": "echo 'No tests here!'"
+    "test": "echo 'No tests here!'",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
