@@ -4,7 +4,6 @@ if ( (Get-PSSnapin -Name Microsoft.SharePoint.PowerShell -ErrorAction SilentlyCo
     Add-PsSnapin Microsoft.SharePoint.PowerShell
 }
 
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fld = $env:chocolateyPackageFolder
 $url = $null
 $local = $false
@@ -30,29 +29,21 @@ function Wait4TimerJob($solution) {
     Write-Host "The solution has been deployed" -ForegroundColor Green
 }
 
-function ParseArgs() {
-    $arguments = Get-PackageParameters
+$arguments = Get-PackageParameters
 
-    # Now parse the packageParameters using good old regular expression
-
-    if ($arguments.ContainsKey("url")) {
-        Write-Host ("Url Argument Found: " + $arguments["url"])
-        $url = $arguments["url"]
-    }
-
-    if ($arguments.ContainsKey("local")) {
-        Write-Host "local Argument Found"
-        $local = $true
-    }
-
+if ($arguments.ContainsKey("url")) {
+    Write-Host ("Url Argument Found: " + $arguments["url"])
+    $url = $arguments["url"]
 }
 
-ParseArgs
+if ($arguments.ContainsKey("local")) {
+    Write-Host "local Argument Found"
+    $local = $true
+}
 
-#$farm = (get-spfarm).BuildVersion.Major
-$file = gci $fld -File -Filter "*.wsp" | select -First 1
+$file = Get-ChildItem $fld -File -Filter "*.wsp" | Select-Object-Object -First 1
 
-$sol = Get-SPSolution | ? { $_.Name -eq $file.Name }
+$sol = Get-SPSolution | Where-Object { $_.Name -eq $file.Name }
 if ($sol -ne $null) {
     "Updating solution " + $file.Name  | Write-Host
     Update-SPSolution $sol -LiteralPath $file.FullName -GACDeployment -Local:$local
