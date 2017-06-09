@@ -41,7 +41,7 @@ if ($arguments.ContainsKey("local")) {
     $local = $true
 }
 
-$file = Get-ChildItem $fld -File -Filter "*.wsp" | Select-Object-Object -First 1
+$file = Get-ChildItem $fld -File -Filter "*.wsp" | Select-Object -First 1
 
 $sol = Get-SPSolution | Where-Object { $_.Name -eq $file.Name }
 if ($sol -ne $null) {
