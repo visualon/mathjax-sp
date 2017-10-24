@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [2.7.2] - 2017-10-24
 ### Changed
 - Updated MathJax library to version 2.7.2.
 
@@ -25,7 +27,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release based on MathJax library 2.2.0
 
-[Unreleased]: https://github.com/VisualOn/FeatureIDE.net/compare/v2.7.1...HEAD
-[2.7.1]: https://github.com/VisualOn/FeatureIDE.net/compare/v2.7.0...v2.7.1
-[2.7.0]: https://github.com/VisualOn/FeatureIDE.net/compare/v2.6.1...v2.7.0
-[2.6.1]: https://github.com/VisualOn/FeatureIDE.net/compare/v2.2.0...v2.6.1
+[Unreleased]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.2...HEAD
+[2.7.2]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.1...v2.7.2
+[2.7.1]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.0...v2.7.1
+[2.7.0]: https://github.com/ViceIce/mathjax-sp/compare/v2.6.1...v2.7.0
+[2.6.1]: https://github.com/ViceIce/mathjax-sp/compare/v2.2.0...v2.6.1
