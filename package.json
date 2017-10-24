@@ -1,6 +1,6 @@
 {
   "name": "mathjax-sp",
-  "version": "2.7.1",
+  "version": "2.7.2",
   "description": "MathJax for SharePoint",
   "private": true,
   "devDependencies": {
