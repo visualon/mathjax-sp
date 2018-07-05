@@ -45,7 +45,7 @@ gulp.task('build', ["copy"], function () {
             errorOnFail: true,
             stdout: true,
             targets: ['Package'],
-            toolsVersion: 14.0,
+            toolsVersion: 15.0,
             configuration: "Release",
             verbosity: "minimal",
             properties: { BasePackagePath: "..\\bin\\" }
