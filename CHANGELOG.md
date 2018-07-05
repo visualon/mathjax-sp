@@ -5,7 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [2.7.4] - 2018-07-05
 - Updated MathJax library to version 2.7.4.
+- Updated to Visual Studio 2017
 
 ## [2.7.2] - 2017-10-24
 ### Changed
@@ -28,7 +31,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release based on MathJax library 2.2.0
 
-[Unreleased]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.2...HEAD
+[Unreleased]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.4...HEAD
+[2.7.4]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.2...v2.7.4
 [2.7.2]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.1...v2.7.2
 [2.7.1]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.0...v2.7.1
 [2.7.0]: https://github.com/ViceIce/mathjax-sp/compare/v2.6.1...v2.7.0
