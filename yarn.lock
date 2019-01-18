@@ -534,9 +534,9 @@ define-property@^2.0.2:
     is-descriptor "^1.0.2"
     isobject "^3.0.1"
 
-del@^3.0.0:
+del@3.0.0:
   version "3.0.0"
-  resolved "https://pkg.visualon.de/npm/vo-npm/del/-/del-3.0.0.tgz#53ecf699ffcbcb39637691ab13baf160819766e5"
+  resolved "https://registry.yarnpkg.com/del/-/del-3.0.0.tgz#53ecf699ffcbcb39637691ab13baf160819766e5"
   integrity sha1-U+z2mf/LyzljdpGrE7rxYIGXZuU=
   dependencies:
     globby "^6.1.0"
@@ -964,10 +964,10 @@ gulp-cli@^2.0.0:
     v8flags "^3.0.1"
     yargs "^7.1.0"
 
-gulp-msbuild@^0.5.4:
+gulp-msbuild@0.5.5:
   version "0.5.5"
-  resolved "https://pkg.visualon.de/npm/vo-npm/gulp-msbuild/-/gulp-msbuild-0.5.5.tgz#329be9c15f1f2565386b20e40b8dd7d0c2e1c3f1"
-  integrity sha1-MpvpwV8fJWU4ayDkC43X0MLhw/E=
+  resolved "https://registry.yarnpkg.com/gulp-msbuild/-/gulp-msbuild-0.5.5.tgz#329be9c15f1f2565386b20e40b8dd7d0c2e1c3f1"
+  integrity sha512-OB7CFmgqg0ke1/0q+FPQqo0lr6syAx87Ynnn4xonHrYZiod5EQ3hOGvHOwWGT+gMz4Ny/WO5IK2c6F5nxv5llg==
   dependencies:
     didyoumean "~1.2.1"
     glob "^7.1.1"
@@ -976,10 +976,10 @@ gulp-msbuild@^0.5.4:
     through2 "^2.0.0"
     uuid "^3.0.1"
 
-gulp-nuget@^1.0.3:
+gulp-nuget@1.2.0:
   version "1.2.0"
-  resolved "https://pkg.visualon.de/npm/vo-npm/gulp-nuget/-/gulp-nuget-1.2.0.tgz#73ae2dd613a78d13297e7c683237e049097a44dc"
-  integrity sha1-c64t1hOnjRMpfnxoMjfgSQl6RNw=
+  resolved "https://registry.yarnpkg.com/gulp-nuget/-/gulp-nuget-1.2.0.tgz#73ae2dd613a78d13297e7c683237e049097a44dc"
+  integrity sha512-RlAoVveqTO55+penmlgdcM2cnWu3WWXAO6jeaK7l9gnAguDVDFBFGmAgwAZy57lnrsK2zUy1X8KaQ2uHECcptg==
   dependencies:
     fs-extra "^0.26.7"
     gulp-util "^3.0.7"
@@ -1011,9 +1011,9 @@ gulp-util@>=3.0.0, gulp-util@^3.0.7:
     through2 "^2.0.0"
     vinyl "^0.5.0"
 
-gulp@^4.0.0:
+gulp@4.0.0:
   version "4.0.0"
-  resolved "https://pkg.visualon.de/npm/vo-npm/gulp/-/gulp-4.0.0.tgz#95766c601dade4a77ed3e7b2b6dc03881b596366"
+  resolved "https://registry.yarnpkg.com/gulp/-/gulp-4.0.0.tgz#95766c601dade4a77ed3e7b2b6dc03881b596366"
   integrity sha1-lXZsYB2t5Kd+0+eyttwDiBtZY2Y=
   dependencies:
     glob-watcher "^5.0.0"
@@ -1633,7 +1633,7 @@ minimist@0.0.8:
   resolved "https://pkg.visualon.de/npm/vo-npm/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
   integrity sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
 
-minimist@^1.1.0, minimist@^1.2.0:
+minimist@1.2.0, minimist@^1.1.0, minimist@^1.2.0:
   version "1.2.0"
   resolved "https://pkg.visualon.de/npm/vo-npm/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
   integrity sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
