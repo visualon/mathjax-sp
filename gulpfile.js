@@ -28,17 +28,17 @@ if (argv.build) {
     version += "-" + argv.build;
 }
 
-gulp.task('clean', function () {
+function clean() {
     return del(['bin', "MathJax.WSP/Layouts/MathJax/**/*.*"]);
-});
+}
 
-gulp.task('copy', ["clean"], function () {
+function copy() {
     return gulp
         .src(files, { base: mj() })
         .pipe(gulp.dest("MathJax.WSP/Layouts/MathJax"));
-});
+}
 
-gulp.task('build', ["copy"], function () {
+function compile() {
     return gulp
         .src("MathJax.WSP/MathJax.WSP.csproj")
         .pipe(msbuild({
@@ -50,9 +50,9 @@ gulp.task('build', ["copy"], function () {
             verbosity: "minimal",
             properties: { BasePackagePath: "..\\bin\\" }
         }));
-});
+}
 
-gulp.task('pack', ["build"], function () {
+function pack() {
     return gulp
         .src("MathJax.nuspec")
         .pipe(nuget.pack({
@@ -61,15 +61,25 @@ gulp.task('pack', ["build"], function () {
             properties: 'configuration=Release;author=VisualOn GmbH;year=' + new Date().getUTCFullYear()
         }))
     .pipe(gulp.dest("bin/"));
-});
+}
 
-gulp.task('push', [], function () {
+function push() {
     return gulp
         .src("bin/*.nupkg")
         .pipe(nuget.push({
             nuget: "nuget.exe",
             source: source
         }))
-});
+}
 
-gulp.task('default', ["pack"]);
+const build = gulp.series(clean, copy, compile, pack)
+
+exports.clean = clean;
+exports.copy = copy;
+exports.compile = compile;
+exports.pack = pack;
+exports.push = push;
+exports.build = build;
+
+
+exports.default = build;
