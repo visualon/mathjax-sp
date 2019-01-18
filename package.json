@@ -5,10 +5,10 @@
   "private": true,
   "devDependencies": {
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-msbuild": "^0.5.4",
     "gulp-nuget": "^1.0.3",
-    "mathjax": "2.7.4",
+    "mathjax": "2.7.5",
     "minimist": "^1.2.0"
   },
   "scripts": {
