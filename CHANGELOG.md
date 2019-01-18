@@ -6,7 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [2.7.5] - 2019-01-18
+### Changed
+- Updated MathJax library to version 2.7.5.
+- Updated build dependencies.
+
 ## [2.7.4] - 2018-07-05
+### Changed
 - Updated MathJax library to version 2.7.4.
 - Updated to Visual Studio 2017
 
@@ -31,7 +37,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release based on MathJax library 2.2.0
 
-[Unreleased]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.4...HEAD
+[Unreleased]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.5...HEAD
+[2.7.5]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.4...v2.7.5
 [2.7.4]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.2...v2.7.4
 [2.7.2]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.1...v2.7.2
 [2.7.1]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.0...v2.7.1
