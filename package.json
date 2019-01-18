@@ -8,8 +8,8 @@
     "gulp": "^3.9.1",
     "gulp-msbuild": "^0.5.4",
     "gulp-nuget": "^1.0.3",
-    "gulp-util": "^3.0.7",
-    "mathjax": "2.7.4"
+    "mathjax": "2.7.4",
+    "minimist": "^1.2.0"
   },
   "scripts": {
     "test": "echo 'No tests here!'",

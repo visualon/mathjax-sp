@@ -1,8 +1,8 @@
 let gulp = require('gulp');
 let msbuild = require("gulp-msbuild");
 let nuget = require('gulp-nuget');
-let gutil = require('gulp-util');
 let del = require('del');
+const argv = require('minimist')(process.argv.slice(2));
 
 let pjson = require("./package.json");
 
@@ -22,10 +22,10 @@ let files = [
 
 
 let version = pjson.version;
-let source = gutil.env.src || "VisualOnStaging";
+let source = argv.src || "VisualOnStaging";
 
-if (gutil.env.build) {
-    version += "-" + gutil.env.build;
+if (argv.build) {
+    version += "-" + argv.build;
 }
 
 gulp.task('clean', function () {
