@@ -2,10 +2,7 @@
   "extends": [
     "config:base",
     "schedule:daily",
-    ":maintainLockFilesWeekly"
-  ],
-  "lockFileMaintenance": {
-    "schedule": null,
-    "automerge": true
-  }
+    ":maintainLockFilesWeekly",
+    ":automergePatch"
+  ]
 }
