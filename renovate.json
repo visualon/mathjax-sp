@@ -5,6 +5,7 @@
     ":maintainLockFilesWeekly"
   ],
   "lockFileMaintenance": {
-    "schedule": null
+    "schedule": null,
+    "automerge": true
   }
 }
