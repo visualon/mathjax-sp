@@ -3,5 +3,9 @@
     "config:base",
     "schedule:daily",
     ":maintainLockFilesWeekly"
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "extends": []
+  }
 }
