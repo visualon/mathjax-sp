@@ -5,7 +5,6 @@
     ":maintainLockFilesWeekly"
   ],
   "lockFileMaintenance": {
-    "enabled": true,
-    "extends": []
+    "schedule": null
   }
 }
