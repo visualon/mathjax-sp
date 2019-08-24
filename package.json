@@ -4,7 +4,7 @@
   "description": "MathJax for SharePoint",
   "private": true,
   "devDependencies": {
-    "del": "5.0.0",
+    "del": "5.1.0",
     "gulp": "4.0.2",
     "gulp-msbuild": "0.6.2",
     "gulp-nuget": "1.2.0",
