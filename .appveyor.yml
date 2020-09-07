@@ -18,7 +18,7 @@ max_jobs: 1
 image: Visual Studio 2019
 
 install:
-- Install-Product node lts x64
+- ps: Install-Product node lts x64
 - yarn install --frozen-lockfile
 
 build_script:
