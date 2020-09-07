@@ -45,7 +45,7 @@ function compile() {
             errorOnFail: true,
             stdout: true,
             targets: ['Package'],
-            toolsVersion: 15.0,
+            toolsVersion: 'auto',
             configuration: "Release",
             verbosity: "minimal",
             properties: { BasePackagePath: "..\\bin\\" }
