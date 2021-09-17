@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/dll1l290c5697ow8?svg=true)](https://ci.appveyor.com/project/VisualOn/mathjax-sp)
+[![build](https://github.com/visualon/mathjax-sp/actions/workflows/build.yml/badge.svg)](https://github.com/visualon/mathjax-sp/actions/workflows/build.yml)
 
 MathJax-SP
 ==========
