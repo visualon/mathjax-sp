@@ -1050,10 +1050,10 @@ gulp-cli@^2.2.0:
     v8flags "^3.2.0"
     yargs "^7.1.0"
 
-gulp-msbuild@0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/gulp-msbuild/-/gulp-msbuild-0.8.0.tgz#e5a52fca98ef6bec225c4e1d53097e247c1b61b9"
-  integrity sha512-WL50GRrbD3BEJ8Hjhgpgv6iA4ST9swVFF4RZD5db0RYt0umlre0+FA8HBFo0Rpqze8/Opcn6A+kvpgx8125j1w==
+gulp-msbuild@0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/gulp-msbuild/-/gulp-msbuild-0.9.0.tgz#d9c769fc6fd141cab1dd10454987ec6bfcbcea23"
+  integrity sha512-N2kP0wkxBf5JXmgvjQhQAZiroPEqA7Y6I9mtVP5viRbuovSsvO+cJYS+lkNx5Zp8W1vTvEW7p1CUQ/YjicI4+w==
   dependencies:
     chalk "^4.0.0"
     didyoumean "~1.2.1"
