@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
-        <id>VisualOn.MathJax</id>
+        <id>visualOn.mathjax</id>
         <version>$version$</version>
         <authors>Michael Kriese</authors>
         <owners>$author$</owners>
