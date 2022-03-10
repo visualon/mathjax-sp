@@ -1,22 +1,8 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
-    "schedule:daily",
-    ":maintainLockFilesWeekly",
-    ":automergePatch",
-    ":masterIssue"
+    "github>visualon/renovate-config",
+    "github>visualon/renovate-config:automergePatch"
   ],
-  "labels": ["deps"],
-  "nuget": {
-    "fileMatch": ["\\.csproj$", "\\.props$", "\\.targets$"]
-  },
-  "prCreation": "not-pending",
-  "semanticCommits": true,
-  "timezone": "Europe/Berlin",
-  "major": {
-    "masterIssueApproval": true
-  },
-  "minor": {
-    "masterIssueApproval": true
-  }
+  "labels": ["deps"]
 }
