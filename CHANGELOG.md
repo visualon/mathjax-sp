@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [2.7.9] - 2022-03-10
 ### Added
 - GitHub actions
+- GitHub repository to nuget package
 
 ### Changed
 - Updated MathJax library to version 2.7.9.
