@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [2.7.9] - 2022-03-10
 ### Added
 - GitHub actions
 
@@ -44,7 +46,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release based on MathJax library 2.2.0
 
-[Unreleased]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.5...HEAD
+[Unreleased]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.9...HEAD
+[2.7.9]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.5...v2.7.9
 [2.7.5]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.4...v2.7.5
 [2.7.4]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.2...v2.7.4
 [2.7.2]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.1...v2.7.2
