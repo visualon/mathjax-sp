@@ -5,8 +5,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [2.7.9] - 2022-03-10
 ### Added
-- AppVeyor automated build
+- GitHub actions
+
+### Changed
+- Updated MathJax library to version 2.7.9.
+- Updated build dependencies.
+- Updated to Visual Studio 2022
 
 ## [2.7.5] - 2019-01-18
 ### Changed
@@ -39,10 +46,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release based on MathJax library 2.2.0
 
-[Unreleased]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.5...HEAD
-[2.7.5]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.4...v2.7.5
-[2.7.4]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.2...v2.7.4
-[2.7.2]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.1...v2.7.2
-[2.7.1]: https://github.com/ViceIce/mathjax-sp/compare/v2.7.0...v2.7.1
-[2.7.0]: https://github.com/ViceIce/mathjax-sp/compare/v2.6.1...v2.7.0
-[2.6.1]: https://github.com/ViceIce/mathjax-sp/compare/v2.2.0...v2.6.1
+[Unreleased]: https://github.com/viceice/mathjax-sp/compare/v2.7.9...HEAD
+[2.7.9]: https://github.com/viceice/mathjax-sp/compare/v2.7.5...v2.7.9
+[2.7.5]: https://github.com/viceice/mathjax-sp/compare/v2.7.4...v2.7.5
+[2.7.4]: https://github.com/viceice/mathjax-sp/compare/v2.7.2...v2.7.4
+[2.7.2]: https://github.com/viceice/mathjax-sp/compare/v2.7.1...v2.7.2
+[2.7.1]: https://github.com/viceice/mathjax-sp/compare/v2.7.0...v2.7.1
+[2.7.0]: https://github.com/viceice/mathjax-sp/compare/v2.6.1...v2.7.0
+[2.6.1]: https://github.com/viceice/mathjax-sp/compare/v2.2.0...v2.6.1
