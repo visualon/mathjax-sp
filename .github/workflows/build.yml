@@ -2,25 +2,70 @@ name: build
 
 on:
   push:
+    branches:
+      - '*'
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
 
 jobs:
   build:
-
-    runs-on: windows-latest   
+    runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@a12a3943b4bdde767164f792f33f40b04645d846 # tag=v3.0.0
-    
-    - name: Use Node.js
-      uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561 # tag=v2
-      with:
-        cache: 'yarn'
+      - uses: actions/checkout@a12a3943b4bdde767164f792f33f40b04645d846 # tag=v3.0.0
 
-    - run: yarn install --frozen-lockfile
+      - name: Use Node.js
+        uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561 # tag=v2
+        with:
+          cache: 'yarn'
 
-    - run: yarn build
+      - run: yarn install --frozen-lockfile
 
-    - uses: actions/upload-artifact@v3
-      with:
-        name: artifacts
-        path: bin/
+      - run: yarn build
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: artifacts
+          path: bin/
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+
+    if: startsWith(github.ref, 'refs/tags/v')
+
+    permissions:
+      contents: write
+      packages: write
+
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: artifacts
+
+      - name: prepare
+        run: |
+          echo "VERSION=$(echo ${VERSION:1})" >> $GITHUB_ENV
+        env:
+          VERSION: ${{ github.ref_name }}
+
+      - name: github release
+        uses: ncipollo/release-action@40bb172bd05f266cf9ba4ff965cb61e9ee5f6d01 # renovate: tag=v1.9.0
+        with:
+          allowUpdates: true
+          body: See https://github.com/visualon/mathjax-sp/blob/main/CHANGELOG.md for changes
+          commit: ${{ github.sha }}
+          name: ${{ env.VERSION }}
+          tag: ${{ github.ref_name }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: bin/*.*
+
+      - name: nuget
+        run: |
+          find bin -name '*.nupkg' -exec dotnet nuget push {} -k ${GITHUB_TOKEN} -s ${GITHUB_SOURCE} --skip-duplicate --force-english-output \;
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_SOURCE: https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
