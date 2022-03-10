@@ -6,7 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
-- AppVeyor automated build
+- GitHub actions
+
+### Changed
+- Updated MathJax library to version 2.7.9.
+- Updated build dependencies.
+- Updated to Visual Studio 2022
 
 ## [2.7.5] - 2019-01-18
 ### Changed
