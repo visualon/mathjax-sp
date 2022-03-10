@@ -30,7 +30,7 @@ jobs:
 
       - run: yarn build
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@6673cd052c4cd6fcf4b4e6e60ea986c889389535 # tag=v3
         with:
           name: artifacts
           path: bin/
@@ -46,7 +46,7 @@ jobs:
       packages: write
 
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v3
         with:
           name: artifacts
           path: bin
