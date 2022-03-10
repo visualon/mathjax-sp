@@ -49,6 +49,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: artifacts
+          path: bin
 
       - name: prepare
         run: |
@@ -66,6 +67,7 @@ jobs:
           tag: ${{ github.ref_name }}
           token: ${{ secrets.GITHUB_TOKEN }}
           artifacts: bin/*.*
+          artifactErrorsFailBuild: true
 
       - name: nuget
         run: |
