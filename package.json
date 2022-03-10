@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ViceIce/mathjax-sp.git"
+    "url": "https://github.com/viceice/mathjax-sp.git"
   },
   "keywords": [
     "mathjax",
@@ -28,7 +28,7 @@
   "author": "Michael Kriese",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ViceIce/mathjax-sp/issues"
+    "url": "https://github.com/viceice/mathjax-sp/issues"
   },
-  "homepage": "https://github.com/ViceIce/mathjax-sp#readme"
+  "homepage": "https://github.com/viceice/mathjax-sp#readme"
 }
