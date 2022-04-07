@@ -1025,10 +1025,10 @@ gulp-msbuild@0.9.0:
     uuid "^3.0.1"
     vinyl "^2.2.0"
 
-gulp-nuget@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/gulp-nuget/-/gulp-nuget-1.2.2.tgz#8b87ce6487fb5a686f6b18c64e77b9fce4da5c95"
-  integrity sha512-itv4EcEiSdJ3tjka+GTfcZHfCOmQruAuinOraN1oUhe37s+tGyX9lGB7WRvw+NcVJh+4liJGzdIY2k5S2cDUjw==
+gulp-nuget@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/gulp-nuget/-/gulp-nuget-1.3.0.tgz#8a706d8656ed6a11b693192bf2f371289fa76132"
+  integrity sha512-+62sFcLxeyWJ9uvLQEc0B8rRRh252/PI0mzsZF9x1cG14/9uErEb0fcFULDLLJE3BG05LeocRW6rCBCzxN172g==
   dependencies:
     fancy-log "^2.0.0"
     fs-extra "^0.26.7"
