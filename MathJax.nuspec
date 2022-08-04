@@ -11,7 +11,7 @@
         <iconUrl>https://static.visualon.de/img/logo-vo.svg</iconUrl>
         <repository type="git" url="https://github.com/visualon/mathjax-sp.git" />
         <dependencies>
-            <dependency id="chocolatey-core.extension" version="1.0.4" />
+            <dependency id="chocolatey-core.extension" version="1.0.7" />
         </dependencies>
     </metadata>
     <files>
