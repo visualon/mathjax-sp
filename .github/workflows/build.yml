@@ -58,7 +58,7 @@ jobs:
           VERSION: ${{ github.ref_name }}
 
       - name: github release
-        uses: ncipollo/release-action@d9356040b0dc694f6d006b6cabee4d3c024f9e72 # tag=v1.11.0
+        uses: ncipollo/release-action@4c75f0f2e4ae5f3c807cf0904605408e319dcaac # tag=v1.11.1
         with:
           allowUpdates: true
           body: See https://github.com/visualon/mathjax-sp/blob/main/CHANGELOG.md for changes
