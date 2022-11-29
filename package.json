@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/viceice/mathjax-sp#readme",
   "resolutions": {
-    "glob-parent": "6.0.1"
+    "glob-parent": "6.0.2"
   }
 }
