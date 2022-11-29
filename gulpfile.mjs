@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 import msbuild from 'gulp-msbuild';
 import nuget from 'gulp-nuget';
-import del from 'del';
+import { deleteAsync } from 'del';
 import minimist from 'minimist';
 import pkg from './package.json' assert { type: 'json' };
 
@@ -29,11 +29,13 @@ if (argv.build) {
 }
 
 export function clean() {
-  return del(['bin', 'MathJax.WSP/Layouts/MathJax/**/*.*']);
+  return deleteAsync(['bin', 'MathJax.WSP/Layouts/MathJax/**/*.*']);
 }
 
 export function copy() {
-  return gulp.src(files, { base: mj() }).pipe(gulp.dest('MathJax.WSP/Layouts/MathJax'));
+  return gulp
+    .src(files, { base: mj() })
+    .pipe(gulp.dest('MathJax.WSP/Layouts/MathJax'));
 }
 
 export function compile() {
@@ -51,7 +53,8 @@ export function compile() {
 }
 
 export function pack() {
-  return gulp.src('MathJax.nuspec')
+  return gulp
+    .src('MathJax.nuspec')
     .pipe(
       nuget.pack({
         nuget: 'nuget.exe',
