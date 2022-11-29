@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/viceice/mathjax-sp/issues"
   },
-  "homepage": "https://github.com/viceice/mathjax-sp#readme"
+  "homepage": "https://github.com/viceice/mathjax-sp#readme",
+  "resolutions": {
+    "glob-parent": "6.0.1"
+  }
 }
